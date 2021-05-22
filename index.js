@@ -5,9 +5,9 @@ function wrapGifts(gifts) {
     }
     return gifts;
 }
-wrapGifts(gifts); */
+wrapGifts(gifts); 
 
-//const name = ["Lisa", "Kaitlin", "Jan"];
+const name = ["Lisa", "Kaitlin", "Jan"];
 //const surprise = "surprise";
 
 function writeCards(name, surprise) {
@@ -23,4 +23,22 @@ function writeCards(name, surprise) {
         let i = 10;
         while(i >= 0)
         console.log(i--);
-    }
+    }  */
+
+    let guests = [ 'Lisa', 'Kaitlin', 'Jan' ];
+    let surprise = "surprise"
+
+    function writeCards(name, event){ 
+           let array = [];
+     for (let i=0; i < name.length; i++ ) {
+       let message =`Thank you, ${name[i]}, for the wonderful ${event} gift!`
+        array.push(message)
+       }
+       return array;
+
+ } 
+ function countDown (num) {
+     let i = num
+     while (i >= 0)
+     console.log(i--);
+ }
